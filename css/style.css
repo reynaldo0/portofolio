@@ -627,7 +627,7 @@ img{
 }
 
 .services_button:hover .button_icon{
-    transform: translateX(.75rem);
+    transform: translateX(.40rem);
 }
 
 .services_modal{
@@ -684,3 +684,113 @@ img{
 }
 
 /* SERVICES ENDS */
+
+/* PORTOFOLIO STARTS */
+.portofolio_container{
+    overflow: initial;
+}
+
+.portofolio_content{
+    padding: 0 1.5rem;
+}
+
+.portofolio_img{
+    width: 265px;
+    border-radius: .5rem;
+    justify-content: center;
+}
+
+.section_subtitle-portofolio{
+    display: block;
+    font-size: var(--small-font-size);
+    text-align: center;
+}
+
+.portofolio_title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portofolio_description{
+    margin-bottom: var(--mb-0-75);
+}
+
+.portofolio_button:hover .button_icon{
+    transform: translateX(.40rem);
+}
+
+.portofolio_container {
+    position: relative; /* Mengatur posisi relatif */
+}
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+    overflow: hidden;
+}
+
+.swiper-portofolio-icon{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullet{
+    bottom: 2.5rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+    outline: none;
+}
+/* PORTOFOLIO ENDS */
+
+/* CONTACT ME STARTS */
+.contact_container{
+    row-gap: 3rem;
+}
+
+.contact_information{
+    display: flex;
+    margin-bottom: var(--mb-2);
+}
+
+.contact_icon{
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-right: var(--mb-0-75);
+}
+
+.contact_title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.contact_subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.contact_content{
+    background-color: var(--input-color);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
+}
+
+.contact_label{
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+}
+
+.contact_input{
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem 0;
+}
+/* CONTACT ME ENDS */
