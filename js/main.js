@@ -26,6 +26,10 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+// AUTO TYPE STARTS
+
+// AUTO TYPE ENDS 
+
 // ACCORDION SKILLS
 const skillsContent = document.getElementsByClassName('skills_content'),
       skillsHeader = document.querySelectorAll('.skills_header')
@@ -88,19 +92,6 @@ modalCloses.forEach((modalClose) => {
     })
 })
 
-// PORTOFOLIO SWIPPER 
-let swiper = new Swiper(".portofolio_container", {
-    cssMode: true,
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
 
 // SCROLL SECTION ACTIVE 
 const sections = document.querySelectorAll('section[id]')
