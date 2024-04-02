@@ -514,7 +514,7 @@ img {
     height: 220px;
     width: 250px;
     padding: 5px 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     transition: .6s;
     display: flex;
@@ -558,12 +558,6 @@ img {
     margin-bottom: 20px;
     font-size: 4rem;
     color: var(--first-color);
-}
-
-.skills_bar,
-.skills_percentage {
-    height: 5px;
-    border-radius: .25rem;
 }
 
 .skills_close .skills_list {
@@ -954,6 +948,7 @@ body.dark-theme {
     .skills_list{
         grid-template-columns: repeat(2,1fr);
     }
+
     .skill_card{
         height: 150px;
         width: 130px;
@@ -978,6 +973,9 @@ body.dark-theme {
     }
     .icon_skill{
         font-size: 2rem;
+    }
+    .skills_name{
+        font-size: 1rem;
     }
 }
 
