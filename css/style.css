@@ -508,12 +508,13 @@ img {
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
     margin-top: 30px;
+    align-items: center;
 }
 
 .skill_card{
     height: 220px;
-    width: 250px;
-    padding: 5px 10px;
+    width: 100%;
+    padding: 20px;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     transition: .6s;
@@ -667,16 +668,16 @@ img {
 }
 
 .portofolio_image {
-    border-radius: 0.25rem;
+    border-radius: 0.75rem;
     margin-bottom: .75rem;
     max-width: 100%;
     height: 873;
-    filter: grayscale(100%) sepia(100%) hue-rotate(240deg) saturate(0%);
-    transition: filter 0.3s ease;
+    filter: grayscale(80%);
+    transition: filter 0.5s ease;
 }
 
 .portofolio_image:hover {
-    filter: grayscale(0%) sepia(0%) hue-rotate(0deg) saturate(100%);
+    filter: grayscale(0%);
 }
 
 .portofolio_title {
@@ -831,7 +832,7 @@ img {
     background-color: var(--first-color);
     opacity: .8;
     padding: 0 .3rem;
-    border-radius: .4rem;
+    border-radius: 100%;
     z-index: var(--z-tooltip);
     transition: .4s;
 }
@@ -949,10 +950,6 @@ body.dark-theme {
         grid-template-columns: repeat(2,1fr);
     }
 
-    .skill_card{
-        height: 150px;
-        width: 130px;
-    }
     .skill_card::after {
         top: 100%; 
         left: -100%; 
@@ -972,10 +969,10 @@ body.dark-theme {
         border-color: transparent; 
     }
     .icon_skill{
-        font-size: 2rem;
+        font-size: 4rem;
     }
     .skills_name{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -1105,11 +1102,6 @@ body.dark-theme {
         justify-content: initial;
     }
 
-    .skills_container {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-
     .qualification_tabs {
         justify-content: center;
     }
@@ -1154,10 +1146,15 @@ body.dark-theme {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .skill_card {
-        width: 220px;
+    .skills_container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 768px; 
     }
 
+    .skills_name{
+        font-size: 1.5rem;
+    }
 }
 
 /* for large device */
@@ -1177,10 +1174,14 @@ body.dark-theme {
         transform: translateX(-6rem);
     }
 
+    .portofolio_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
     .skills_container {
-        margin-left: 200px;
-        margin-right: 200px;
-        grid-template-columns: 1fr;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 768px; 
     }
 
     .qualification_sections {
