@@ -532,7 +532,7 @@ img {
     left: -200px;
     width: 120%;
     transform: rotate(50deg);
-    background-color: var(--first-color);
+    background-color: var(--first-color-second);
     height: 18px;
     filter: blur(30px);
     opacity: 0.5;
@@ -540,7 +540,7 @@ img {
 }
 
 .skill_card:hover::after{
-    width: 225%;
+    width: 325%;
     top: -100%;
 }
 
