@@ -5,7 +5,7 @@
     /* COLOR START */
     --header-height: 3rem;
 
-    --hue-color: 230;
+    --hue-color: 210;
 
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --name-color: hsl(var(--hue-color), 69%, 61%);
@@ -324,7 +324,7 @@ img {
     background-color: var(--first-color);
     color: #fff;
     padding: 1rem;
-    border-radius: .5rem;
+    border-radius: .6rem;
     font-weight: var(--font-medium);
     margin-top: 10px;
 }
@@ -382,7 +382,7 @@ img {
     width: calc(100% + 8px);
     height: 100%;
     background-color: var(--body-color);
-    border-left: 2px solid var(--first-color-second);
+    border-left: 2px solid var(--first-color);
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }
@@ -407,7 +407,7 @@ img {
 
     41%,
     60% {
-        content: "Fullstack Developer";
+        content: "Cyber Security Enthusiast";
     }
 
     61%,
@@ -532,7 +532,7 @@ img {
     left: -200px;
     width: 120%;
     transform: rotate(50deg);
-    background-color: var(--first-color-second);
+    background-color: var(--name-color);
     height: 18px;
     filter: blur(30px);
     opacity: 0.5;
@@ -559,6 +559,12 @@ img {
     margin-bottom: 20px;
     font-size: 4rem;
     color: var(--first-color);
+}
+
+.icon_skill_svg{
+    width: 120px;
+    height: 110px;
+    margin-bottom: 5px;
 }
 
 .skills_close .skills_list {
@@ -688,6 +694,7 @@ img {
 
 .portofolio_buttons {
     display: flex;
+    padding-top: 20px;
 }
 
 .portofolio_button {
@@ -832,7 +839,7 @@ img {
     background-color: var(--first-color);
     opacity: .8;
     padding: 0 .3rem;
-    border-radius: 100%;
+    border-radius: 30%;
     z-index: var(--z-tooltip);
     transition: .4s;
 }
