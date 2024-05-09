@@ -265,7 +265,7 @@ img {
 
 .home_blob-img {
     width: 200px;
-    height: 187px;
+    height: 237px;
     transform: scale(1);
 }
 
@@ -441,6 +441,8 @@ img {
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
+    -webkit-filter: drop-shadow(3px 3px 3px var(--text-color));
+    filter: drop-shadow(3px 3px 3px var(--first-color));
 }
 
 .about_description {
@@ -550,10 +552,6 @@ img {
     background-color: transparent;
     transform: translateY(-8px);
     border-color: var(--first-color-second);
-}
-
-.skill_card:hover i{
-    color: var(--title-color);
 }
 
 .icon_skill{
