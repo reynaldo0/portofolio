@@ -183,9 +183,9 @@ function emailSend(){
                 icon: "success",
                 iconColor:'	#579ce0',
                 title: "TERIMA KASIH!",
-                text: "Pesan berhasil di kirim ke Email",
+                text: "Pesan berhasil di kirim ke Email.",
                 showConfirmButton: false,
-                timer: 1500
+                timer: 3500
               });
         }
       }
