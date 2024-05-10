@@ -156,3 +156,39 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+// SEND MESSAGE TO EMAIL STARTS 
+function emailSend(){
+    var userName = document.getElementById('nama').value;
+    var email = document.getElementById('email').value;
+    var pesan = document.getElementById('pesan').value;
+
+    var massageInput = "Nama = " + userName +
+    "<br/> Email = " + email +
+    "<br/> Pesan = " + pesan;
+
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "userportofolio@gmail.com",
+        Password : "A30F3E344AD1B8E25C8FFE12B9E95E9EB736",
+        To : 'reynaldooyusellino@gmail.com',
+        From : "reynaldooyusellino@gmail.com",
+        Subject : "This is the subject",
+        Body : massageInput
+    }).then(
+      message => {
+        if(message=='OK'){
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                iconColor:'	#579ce0',
+                title: "TERIMA KASIH!",
+                text: "Pesan berhasil di kirim ke Email",
+                showConfirmButton: false,
+                timer: 1500
+              });
+        }
+      }
+    );
+}
+// SEND MESSAGE TO EMAIL ENDS

@@ -346,6 +346,10 @@ img {
     align-items: center;
 }
 
+.button_input{
+    border-style: none;
+}
+
 .button--small {
     padding: .75rem 1rem;
 }

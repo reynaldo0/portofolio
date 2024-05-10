@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- SWIPPER CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
     <!-- SWIPPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -532,27 +531,27 @@
                     </div>
                 </div>
 
-                <form action="" class="contact_form grid">
+                <form onsubmit="emailSend(); reset(); return false;" class="contact_form grid">
                     <div class="contact_inputs grid">
                         <div class="contact_content">
                             <label for="" class="contact_label">Nama :</label>
-                            <input type="text" class="contact_input" placeholder="Masukan Nama Anda...">
+                            <input type="text" id="nama" class="contact_input" placeholder="Masukan Nama Anda..." required>
                         </div>
                         <div class="contact_content">
-                            <label for="" class="contact_label">Email / Nomor Telepon :</label>
-                            <input type="email" class="contact_input" placeholder="Masukan Email / Nomor Telepon...">
+                            <label for="" class="contact_label">Email :</label>
+                            <input type="email" id="email" class="contact_input" placeholder="Masukan Email / Nomor Telepon..." required>
                         </div>
                     </div>
                     <div class="contact_content">
                         <label for="" class="contact_label">Pesan :</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact_input" placeholder="Masukan Pesan..."></textarea>
+                        <textarea name="" id="pesan" cols="0" rows="7" class="contact_input" placeholder="Masukan Pesan..." required></textarea>
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
+                        <button class="button button--flex button_input">
                             Kirim Pesan
                             <i class="uil uil-message button_icon"></i>
-                        </a>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -611,6 +610,9 @@
 
     <!-- MAIN JS -->
     <script src="js/main.js"></script>
+    <!-- EMAIL API -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
