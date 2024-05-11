@@ -192,3 +192,6 @@ function emailSend(){
     );
 }
 // SEND MESSAGE TO EMAIL ENDS
+
+// AOS 
+AOS.init();
