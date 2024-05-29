@@ -5,7 +5,8 @@
     /* COLOR START */
     --header-height: 3rem;
 
-    --hue-color: 210;
+    --hue-color: 50; 
+    /* 210 blue */
 
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --name-color: hsl(var(--hue-color), 69%, 61%);
@@ -408,7 +409,7 @@ img {
 
     21%,
     40% {
-        content: "Website Developer";
+        content: "Web Developer";
     }
 
     41%,
@@ -423,7 +424,7 @@ img {
 
     81%,
     100% {
-        content: "3D Designer";
+        content: "Fullstack Developer";
     }
 }
 
@@ -601,7 +602,7 @@ img {
 .qualification_tabs {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-1);
 }
 
 .qualification_button {
@@ -659,10 +660,16 @@ img {
 
 .qualification [data-content] {
     display: none;
+    transform: scale(0.7);
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out, opacity 1s ease-in-out;
+    display: none;
 }
 
 .qualification_active[data-content] {
     display: block;
+    opacity: 1;
+    transform: scale(1);
 }
 
 .qualification_button.qualification_active {
@@ -950,6 +957,7 @@ body.dark-theme {
 
     .qualification_data {
         gap: .5rem;
+        
     }
 }
 

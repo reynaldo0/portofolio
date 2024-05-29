@@ -69,6 +69,33 @@ tabs.forEach(tab =>{
     })
 })
 
+// QUALIFICATION SCALE
+document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.qualification_button');
+    const contents = document.querySelectorAll('.qualification_content');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons and contents
+            buttons.forEach(btn => btn.classList.remove('qualification_active'));
+            contents.forEach(content => {
+                content.classList.remove('qualification_active');
+                content.style.display = 'none';
+            });
+
+            // Add active class to the clicked button
+            button.classList.add('qualification_active');
+
+            // Show and animate the corresponding content
+            const target = document.querySelector(button.getAttribute('data-target'));
+            target.style.display = 'block';
+            setTimeout(() => {
+                target.classList.add('qualification_active');
+            }, 50); // Adding a small delay to trigger the transition
+        });
+    });
+});
+
 // SERVICE MODAL
 const modalViews = document.querySelectorAll('.services_modal'),
       modalBtns = document.querySelectorAll('.services_button'),
