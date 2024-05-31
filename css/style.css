@@ -5,7 +5,7 @@
     /* COLOR START */
     --header-height: 3rem;
 
-    --hue-color: 50; 
+    --hue-color: 205; 
     /* 210 blue */
 
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -447,7 +447,7 @@ img {
     justify-self: center;
     align-self: center;
     -webkit-filter: drop-shadow(3px 3px 3px var(--text-color));
-    filter: drop-shadow(3px 3px 3px orange);
+    filter: drop-shadow(3px 3px 3px var(--first-color));
 }
 
 .about_description {
