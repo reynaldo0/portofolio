@@ -451,7 +451,7 @@ img {
 }
 
 .about_description {
-    margin-bottom: var(--mb-);
+    margin-bottom: var(--mb-1);
     text-align: justify;
 }
 
@@ -602,7 +602,7 @@ img {
 .qualification_tabs {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: var(--mb-1);
+    margin-bottom: var(--mb-0-5);
 }
 
 .qualification_button {
