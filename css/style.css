@@ -996,10 +996,14 @@ body.dark-theme {
     }
 
     .qualification_button {
-        font-size: var(--h3-font-size);
-        font-weight: var(--font-small);
+        font-size: 1rem;
+        font-weight: var(--font-medium);
         cursor: pointer;
-        padding-right: 20px;
+    }
+
+    .qualification_tabs{
+        gap: 10px;
+
     }
     .qualification_icon{
         font-size: 1rem;
