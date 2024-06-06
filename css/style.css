@@ -1202,9 +1202,9 @@ img {
 }
 
 .icon_skill_svg{
-    width: 120px;
-    height: 110px;
-    margin-bottom: 5px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
 }
 
 .skills_close .skills_list {
@@ -1252,6 +1252,11 @@ img {
 .qualification_icon {
     font-size: 1.8rem;
     margin-right: var(--mb-0-25);
+}
+.qualification_tr{
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: var(--mb-0-75);
 }
 
 .qualification_data {
@@ -1615,7 +1620,10 @@ body.dark-theme {
     .skills_list{
         grid-template-columns: repeat(2,1fr);
     }
-
+    
+    .skill_card{
+        height: 170px;
+    }
     .skill_card::after {
         top: 100%; 
         left: -100%; 
@@ -1627,6 +1635,11 @@ body.dark-theme {
     .skill_card:hover::after {
         width: 300%; 
         top: -50%;
+    }
+    .icon_skill_svg{
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
     }
 
     .qualification_button {
@@ -1641,6 +1654,11 @@ body.dark-theme {
     }
     .qualification_icon{
         font-size: 1rem;
+    }
+    .qualification_tr{
+        display: inline-block;
+        font-size: .8rem;
+        margin-bottom: var(--mb-0-75);
     }
 
     .skill_card:hover {
