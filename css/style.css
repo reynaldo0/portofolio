@@ -439,7 +439,7 @@ img {
     box-shadow: -2vmin 0 0.5180269487971856vmin currentColor;
 }
 .background span:nth-child(9) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 55%;
     left: 63%;
     animation-duration: 42s;
@@ -448,7 +448,7 @@ img {
     box-shadow: -2vmin 0 1.1702397446846269vmin currentColor;
 }
 .background span:nth-child(10) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 38%;
     left: 58%;
     animation-duration: 11s;
@@ -457,7 +457,7 @@ img {
     box-shadow: 2vmin 0 1.1579728551356867vmin currentColor;
 }
 .background span:nth-child(11) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 9%;
     left: 55%;
     animation-duration: 47s;
@@ -466,7 +466,7 @@ img {
     box-shadow: -2vmin 0 1.2091250956240682vmin currentColor;
 }
 .background span:nth-child(12) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 89%;
     left: 80%;
     animation-duration: 29s;
@@ -475,7 +475,7 @@ img {
     box-shadow: -2vmin 0 0.9259886673407252vmin currentColor;
 }
 .background span:nth-child(13) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 92%;
     left: 9%;
     animation-duration: 54s;
@@ -484,7 +484,7 @@ img {
     box-shadow: -2vmin 0 0.7613385104674317vmin currentColor;
 }
 .background span:nth-child(14) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 13%;
     left: 28%;
     animation-duration: 62s;
@@ -493,7 +493,7 @@ img {
     box-shadow: -2vmin 0 0.4227743344206536vmin currentColor;
 }
 .background span:nth-child(15) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 90%;
     left: 60%;
     animation-duration: 51s;
@@ -502,7 +502,7 @@ img {
     box-shadow: 2vmin 0 0.8872156218796021vmin currentColor;
 }
 .background span:nth-child(16) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 42%;
     left: 1%;
     animation-duration: 40s;
@@ -511,7 +511,7 @@ img {
     box-shadow: 2vmin 0 0.9193101147369549vmin currentColor;
 }
 .background span:nth-child(17) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 14%;
     left: 16%;
     animation-duration: 23s;
@@ -520,7 +520,7 @@ img {
     box-shadow: 2vmin 0 0.5638769148897069vmin currentColor;
 }
 .background span:nth-child(18) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 74%;
     left: 87%;
     animation-duration: 46s;
@@ -556,7 +556,7 @@ img {
     box-shadow: 2vmin 0 0.881202610068166vmin currentColor;
 }
 .background span:nth-child(22) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 71%;
     left: 47%;
     animation-duration: 61s;
@@ -565,7 +565,7 @@ img {
     box-shadow: 2vmin 0 0.9017813293244619vmin currentColor;
 }
 .background span:nth-child(23) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 22%;
     left: 24%;
     animation-duration: 53s;
@@ -574,7 +574,7 @@ img {
     box-shadow: -2vmin 0 1.0958981085178745vmin currentColor;
 }
 .background span:nth-child(24) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 16%;
     left: 61%;
     animation-duration: 42s;
@@ -583,7 +583,7 @@ img {
     box-shadow: -2vmin 0 0.7530618022920119vmin currentColor;
 }
 .background span:nth-child(25) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 54%;
     left: 13%;
     animation-duration: 32s;
@@ -592,7 +592,7 @@ img {
     box-shadow: -2vmin 0 0.8367177898381686vmin currentColor;
 }
 .background span:nth-child(26) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 88%;
     left: 81%;
     animation-duration: 50s;
@@ -601,7 +601,7 @@ img {
     box-shadow: 2vmin 0 0.9130363964719066vmin currentColor;
 }
 .background span:nth-child(27) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 20%;
     left: 21%;
     animation-duration: 20s;
@@ -610,7 +610,7 @@ img {
     box-shadow: 2vmin 0 0.7199875652059329vmin currentColor;
 }
 .background span:nth-child(28) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 32%;
     left: 7%;
     animation-duration: 15s;
@@ -628,7 +628,7 @@ img {
     box-shadow: 2vmin 0 0.5502527471009615vmin currentColor;
 }
 .background span:nth-child(30) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 36%;
     left: 27%;
     animation-duration: 9s;
@@ -646,7 +646,7 @@ img {
     box-shadow: 2vmin 0 0.7143445410092366vmin currentColor;
 }
 .background span:nth-child(32) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 2%;
     left: 86%;
     animation-duration: 12s;
@@ -655,7 +655,7 @@ img {
     box-shadow: 2vmin 0 0.8155990170893963vmin currentColor;
 }
 .background span:nth-child(33) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 11%;
     left: 1%;
     animation-duration: 54s;
@@ -664,7 +664,7 @@ img {
     box-shadow: -2vmin 0 0.3206536504280282vmin currentColor;
 }
 .background span:nth-child(34) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 52%;
     left: 80%;
     animation-duration: 49s;
@@ -673,7 +673,7 @@ img {
     box-shadow: -2vmin 0 0.5977773011279595vmin currentColor;
 }
 .background span:nth-child(35) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 59%;
     left: 49%;
     animation-duration: 34s;
@@ -682,7 +682,7 @@ img {
     box-shadow: 2vmin 0 0.5306614891870893vmin currentColor;
 }
 .background span:nth-child(36) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 99%;
     left: 54%;
     animation-duration: 42s;
@@ -691,7 +691,7 @@ img {
     box-shadow: -2vmin 0 0.7206550894417763vmin currentColor;
 }
 .background span:nth-child(37) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 60%;
     left: 5%;
     animation-duration: 39s;
@@ -700,7 +700,7 @@ img {
     box-shadow: 2vmin 0 0.5728329020216014vmin currentColor;
 }
 .background span:nth-child(38) {
-    color: var(--text-color);
+    color: var(--first-color);
     top: 3%;
     left: 94%;
     animation-duration: 20s;
