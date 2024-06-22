@@ -1810,9 +1810,24 @@ img {
     filter: grayscale(0%);
 }
 
+.portofolio_tools {
+    display: flex;
+    gap: 10px; 
+    margin-bottom: 10px;
+  }
+  
+  .tool {
+    background-color: var(--first-color); 
+    color: #ffff; 
+    padding: 5px 10px; 
+    border-radius: 10px;
+    font-size: 0.8em;
+  }
+
 .portofolio_title {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+    margin-top: .25rem;
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
     margin-bottom: .25rem;
 }
 
