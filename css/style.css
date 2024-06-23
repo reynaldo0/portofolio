@@ -2090,6 +2090,7 @@ body.dark-theme {
 
     .portofolio_image {
         filter: grayscale(0%);
+        height: 170px;
     }
     .portofolio_button{
         margin-right: 1rem;
