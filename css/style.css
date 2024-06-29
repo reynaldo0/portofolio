@@ -1592,7 +1592,19 @@ img {
 }
 
 .skills_name {
+    color: var(--first-color);
     font-size: 2rem;
+    position: absolute;
+    bottom: -30px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.skill_card:hover .skills_name {
+    opacity: 1;
+    transform: translateY(-60px);
 }
 
 .skills_list{
@@ -1604,7 +1616,7 @@ img {
 }
 
 .skill_card{
-    height: 220px;
+    height: 200px;
     width: 100%;
     padding: 20px;
     box-shadow: 0 0.3rem 0.5rem var(--first-color);
@@ -1615,6 +1627,11 @@ img {
     flex-direction: column;
     position: relative;
     overflow: hidden;
+}
+
+.skill_card:hover{
+    height: 220px;
+    width: 100%;
 }
 
 .skill_card::after{
@@ -1638,7 +1655,7 @@ img {
 
 .skills_content .skill_card:hover{
     background-color: transparent;
-    transform: translateY(-8px);
+    transform: translateY(-10px);
     border-color: var(--first-color-second);
 }
 
@@ -1650,9 +1667,10 @@ img {
 }
 
 .icon_skill_svg{
+    margin-top: 20px;
     width: 100px;
     height: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .skills_close .skills_list {
@@ -1863,7 +1881,6 @@ img {
     outline: none;
     padding: .25rem .5rem .5rem 0;
 }
-
 /* CONTACT ME ENDS */
 
 /* FOOTER STARTS */
@@ -2070,8 +2087,12 @@ body.dark-theme {
     }
     
     .skill_card{
-        height: 170px;
+        height: 160px;
     }
+    .skill_card:hover{
+        height: 180px;
+    }
+    
     .skill_card::after {
         top: 100%; 
         left: -100%; 

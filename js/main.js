@@ -96,30 +96,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// SERVICE MODAL
-const modalViews = document.querySelectorAll('.services_modal'),
-      modalBtns = document.querySelectorAll('.services_button'),
-      modalCloses = document.querySelectorAll('.services_modal-close')
-
-let modal = function(modalClick){
-    modalViews[modalClick].classList.add('active-modal')
-}
-
-modalBtns.forEach((modalBtn, i)=>{
-    modalBtn.addEventListener('click', () =>{
-        modal(i)
-    })
-})
-
-modalCloses.forEach((modalClose) => {
-    modalClose.addEventListener('click', () => {
-        modalViews.forEach((modalViews) =>{
-            modalViews.classList.remove('active-modal')
-        })
-    })
-})
-
-
 // SCROLL SECTION ACTIVE 
 const sections = document.querySelectorAll('section[id]')
 
@@ -229,5 +205,6 @@ document.getElementById("demo-deactive").addEventListener("click", function(even
       text: "Website belum bisa di akses",
     });
   });
+
 // AOS 
 AOS.init();
