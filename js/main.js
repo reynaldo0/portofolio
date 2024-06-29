@@ -220,5 +220,14 @@ function emailSend(){
 }
 // SEND MESSAGE TO EMAIL ENDS
 
+// ALERT IF LINK DEACTIVE
+document.getElementById("demo-deactive").addEventListener("click", function(event) {
+    event.preventDefault();
+    Swal.fire({
+      icon: "error",
+      title: "Mohon Maaf...",
+      text: "Website belum bisa di akses",
+    });
+  });
 // AOS 
 AOS.init();
