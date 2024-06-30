@@ -203,6 +203,27 @@ document.getElementById("demo-deactive").addEventListener("click", function(even
       icon: "error",
       title: "Mohon Maaf...",
       text: "Website belum bisa di akses",
+      confirmButtonColor: "#3085d6",
+    });
+  });
+
+document.getElementById('down-cv').addEventListener('click', function(event) {
+    event.preventDefault();
+    const downloadUrl = this.getAttribute('href');
+    
+    Swal.fire({
+      title: "Apakah Anda Yakin?",
+      text: "Download Curriculum Vitae?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Download",
+      cancelButtonText: "Batalkan",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = downloadUrl;
+      }
     });
   });
 
