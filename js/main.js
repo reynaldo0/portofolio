@@ -1,3 +1,6 @@
+const rootStyles = getComputedStyle(document.documentElement);
+const firstColor = rootStyles.getPropertyValue('--first-color');
+
 // MENAMPILKAN MENU
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -203,7 +206,7 @@ document.getElementById("demo-deactive").addEventListener("click", function(even
       icon: "error",
       title: "Mohon Maaf...",
       text: "Website belum bisa di akses",
-      confirmButtonColor: "#3085d6",
+      confirmButtonColor: firstColor,
     });
   });
 
@@ -216,7 +219,7 @@ document.getElementById('down-cv').addEventListener('click', function(event) {
       text: "Download Curriculum Vitae?",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
+      confirmButtonColor: firstColor,
       cancelButtonColor: "#d33",
       confirmButtonText: "Download",
       cancelButtonText: "Batalkan",
@@ -236,7 +239,7 @@ function showDownloadConfirmation(event, downloadUrl) {
       text: "Game Ini Hanya Untuk Desktop, Jangan Lupa Extract Filenya. Enjoy!",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
+      confirmButtonColor: firstColor,
       cancelButtonColor: "#d33",
       confirmButtonText: "Download",
       cancelButtonText: "Batalkan"
