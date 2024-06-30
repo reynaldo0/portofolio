@@ -206,5 +206,38 @@ document.getElementById("demo-deactive").addEventListener("click", function(even
     });
   });
 
+// Fungsi untuk menampilkan SweetAlert dan mengunduh file jika dikonfirmasi
+function showDownloadConfirmation(event, downloadUrl) {
+    event.preventDefault();
+
+    Swal.fire({
+      title: "Apakah Anda Yakin?",
+      text: "Game Ini Hanya Untuk Desktop, Jangan Lupa Extract Filenya. Enjoy!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Download",
+      cancelButtonText: "Batalkan"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = downloadUrl;
+      }
+    });
+  }
+
+  // Tambahkan event listener pada tombol download untuk setiap game
+  document.getElementById('download-file-gameattack').addEventListener('click', function(event) {
+    showDownloadConfirmation(event, this.getAttribute('href'));
+  });
+
+  document.getElementById('download-file-carsgame').addEventListener('click', function(event) {
+    showDownloadConfirmation(event, this.getAttribute('href'));
+  });
+
+  document.getElementById('download-file-pingpong').addEventListener('click', function(event) {
+    showDownloadConfirmation(event, this.getAttribute('href'));
+  });
+
 // AOS 
 AOS.init();
